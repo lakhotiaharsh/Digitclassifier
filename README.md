@@ -5,10 +5,15 @@ This project aims to classify handwritten images, such as digits or letters, usi
 
 ## Table of Contents
   **Introduction**
+  
   **Dataset**
+  
   **Project Structure**
+  
   **Dependencies**
+  
   **Model Architecture**
+  
   **Training**
 
 
@@ -24,26 +29,41 @@ Alternatively, if you are using a custom dataset, please ensure the images are p
 To run this project, you'll need the following dependencies:
 
 **Python 3.8+**
+
   **TensorFlow 2.x**
+  
   **Keras**
+  
   **NumPy**
+  
   **Pandas**
+  
   **Matplotlib**
+  
   **Jupyter Notebook**
+  
 
 ## Model Architecture
 The model is built using a Convolutional Neural Network (CNN), which is well-suited for image classification tasks. The architecture consists of the following layers:
 
   **Input Layer**: Takes in the 28x28 pixel images.
+  
   **Convolutional Layers**: Extracts features from the images.
+  
   **Pooling Layers**: Reduces the dimensionality of the feature maps.
+  
   **Fully Connected Layers**: Classifies the images based on the extracted features.
+  
   **Output Layer**: Produces the probability distribution over the classes.
 
 ## Training
 The model is trained using the training dataset. The training process involves:
 
 **Data Augmentation**: To improve the model's robustness, data augmentation techniques such as rotation, zoom, and shift are applied.
+
 **Loss Function**: Categorical Crossentropy is used as the loss function since this is a multi-class classification problem.
+
 **Optimizer**: The Adam optimizer is used to minimize the loss function.
+
 **Metrics**: Accuracy is used as the primary metric for evaluation during training.
+
